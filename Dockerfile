@@ -5,7 +5,8 @@ LABEL maintainer="HeRoMo"
 RUN apt-get update -y && \
     apt-get install -y \
       bzip2 \
-      calibre && \
+      calibre \
+      fonts-ricty-diminished && \
     apt-get autoremove -y && \
     apt-get clean && \
     rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
